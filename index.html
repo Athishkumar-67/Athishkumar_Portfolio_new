@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athishkumar S | Software Developer & AI Enthusiast</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#0b0f19',
+                        cardBg: '#131c2e',
+                        accentBlue: '#3b82f6',
+                        accentPurple: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans selection:bg-accentBlue selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                Athishkumar S
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:opacity-95 shadow-lg shadow-blue-500/20 transition">Contact Me</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-blue-400">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-blue-400">Skills</a>
+            <a href="#projects" class="block text-slate-300 hover:text-blue-400">Projects</a>
+            <a href="#experience" class="block text-slate-300 hover:text-blue-400">Experience</a>
+            <a href="#certifications" class="block text-slate-300 hover:text-blue-400">Certifications</a>
+            <a href="#contact" class="block text-blue-400 font-semibold">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-28 pb-16 px-6 relative overflow-hidden">
+        <!-- Glow background effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/3 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Available for Opportunities
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Hi, I'm <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-500 bg-clip-text text-transparent">Athishkumar S</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Computer Science & Business Systems student[cite: 1] passionate about crafting robust software, intelligent AI models, and real-time network security defense systems.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold shadow-lg shadow-blue-600/30 transition flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> Explore Projects
+                </a>
+                <a href="#contact" class="px-8 py-4 rounded-xl bg-cardBg hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold transition flex items-center gap-2">
+                    <i class="fa-solid fa-envelope">></i> Get In Touch
+                </a>
+            </div>
+            <!-- Social Links -->
+            <div class="flex items-center justify-center space-x-6 mt-12 text-xl text-slate-400">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-blue-400 transition bg-cardBg p-3 rounded-full border border-slate-800"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/athishkumar-67" target="_blank" class="hover:text-white transition bg-cardBg p-3 rounded-full border border-slate-800"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:athishkumar067@gmail.com" class="hover:text-red-400 transition bg-cardBg p-3 rounded-full border border-slate-800"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-cardBg/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-6">About <span class="text-blue-400">Me</span></h2>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                    I am a Computer Science and Business Systems student at <b>Akashaya College of Engineering and Technology (2023–2027)</b>[cite: 1]. My passion lies at the intersection of core software development, automated problem-solving, and AI applications.
+                </p>
+                <p class="text-slate-300 leading-relaxed mb-8">
+                    Equipped with hands-on experience in Python, SQL, machine learning, and business analysis, I strive to build high-impact technical solutions that tackle real-world challenges efficiently.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-cardBg p-5 rounded-2xl border border-slate-800">
+                        <h3 class="text-2xl font-bold text-blue-400 mb-1">7.5</h3>
+                        <p class="text-sm text-slate-400">B.Tech CGPA[cite: 1]</p>
+                    </div>
+                    <div class="bg-cardBg p-5 rounded-2xl border border-slate-800">
+                        <h3 class="text-2xl font-bold text-purple-400 mb-1">90%</h3>
+                        <p class="text-sm text-slate-400">SSLC Score[cite: 1]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-80 rounded-3xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-slate-700/50 p-8 flex flex-col justify-center space-y-6 shadow-2xl">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Education</h4>
+                            <p class="text-sm text-slate-400">B.Tech CSBS (2023 - 2027)[cite: 1]</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Location</h4>
+                            <p class="text-sm text-slate-400">Coimbatore, India[cite: 1]</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-green-500/20 text-green-400 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-briefcase"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Domain Focus</h4>
+                            <p class="text-sm text-slate-400">AI/ML, Security, Software Dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Technical <span class="text-blue-400">Expertise</span></h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Technologies, tools, and competencies I work with to turn ideas into reality.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Programming Languages -->
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl hover:border-blue-500/50 transition">
+                <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-code"></i></div>
+                <h3 class="text-xl font-bold mb-3">Programming Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Python</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">SQL[cite: 1]</span>
+                </div>
+            </div>
+            <!-- Databases -->
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl hover:border-purple-500/50 transition">
+                <div class="text-purple-400 text-2xl mb-4"><i class="fa-solid fa-database"></i></div>
+                <h3 class="text-xl font-bold mb-3">Databases</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">MySQL[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">MongoDB[cite: 1]</span>
+                </div>
+            </div>
+            <!-- Tools & Platforms -->
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl hover:border-blue-500/50 transition">
+                <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-toolbox"></i></div>
+                <h3 class="text-xl font-bold mb-3">Tools & Platforms</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Git & GitHub[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">VS Code[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">UI Path[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Excel[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Claude / ChatGPT[cite: 1]</span>
+                </div>
+            </div>
+            <!-- Soft Skills -->
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl hover:border-purple-500/50 transition lg:col-span-2">
+                <div class="text-purple-400 text-2xl mb-4"><i class="fa-solid fa-users-gear"></i></div>
+                <h3 class="text-xl font-bold mb-3">Soft Skills & Competencies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Problem Solving[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Communication[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Teamwork[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Time Management[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Decision Making[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Collaboration[cite: 1]</span>
+                </div>
+            </div>
+            <!-- Languages -->
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 shadow-xl hover:border-blue-500/50 transition">
+                <div class="text-blue-400 text-2xl mb-4"><i class="fa-solid fa-language"></i></div>
+                <h3 class="text-xl font-bold mb-3">Languages Known</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">English[cite: 1]</span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-sm font-medium">Tamil[cite: 1]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-cardBg/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Featured <span class="text-blue-400">Projects</span></h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Innovative applications built to solve complex cybersecurity and data-driven challenges.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-3xl mx-auto">
+                <!-- Project Card -->
+                <div class="bg-cardBg rounded-3xl border border-slate-800 p-8 shadow-2xl hover:border-blue-500/50 transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-bl-full pointer-events-none group-hover:bg-blue-500/20 transition"></div>
+                    <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-wider mb-4 inline-block">Team Leader[cite: 1]</span>
+                    <h3 class="text-2xl font-bold mb-4">Automated AI-Driven Hybrid IDS/IPS for Real-Time Network Defense[cite: 1]</h3>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        Developed an advanced machine learning application designed to autonomously detect and mitigate threats by analyzing behavioral patterns. Capable of dissecting network protocols and executing rapid protective measures in active network infrastructures.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-lg bg-slate-800 text-blue-400 text-xs font-semibold">Python[cite: 1]</span>
+                        <span class="px-3 py-1 rounded-lg bg-slate-800 text-purple-400 text-xs font-semibold">Machine Learning[cite: 1]</span>
+                        <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold">VS Code[cite: 1]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Internships -->
+    <section id="experience" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Internships & <span class="text-blue-400">Experience</span></h2>
+            <p class="text-slate-400 max-w-xl mx-auto">Practical industrial exposure and virtual training programs.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Internship 1 -->
+            <div class="bg-cardBg p-8 rounded-3xl border border-slate-800 shadow-xl relative">
+                <span class="text-xs font-bold text-purple-400 uppercase tracking-widest mb-2 block">Virtual Program</span>
+                <h3 class="text-xl font-bold mb-1">CODSOFT</h3>
+                <p class="text-sm text-blue-400 font-medium mb-4">Artificial Intelligence Intern[cite: 1]</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Successfully completed 4 weeks of a virtual internship program in Artificial Intelligence with wonderful remarks[cite: 1].
+                </p>
+            </div>
+            <!-- Internship 2 -->
+            <div class="bg-cardBg p-8 rounded-3xl border border-slate-800 shadow-xl relative">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest mb-2 block">Training Experience</span>
+                <h3 class="text-xl font-bold mb-1">LET'S GAME TECH</h3>
+                <p class="text-sm text-purple-400 font-medium mb-4">Python Learner / Developer[cite: 1]</p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Gained great creativity and attention to learn about Python programming useful for core software solutions[cite: 1].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-24 px-6 bg-cardBg/40 border-y border-slate-800/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Licenses & <span class="text-blue-400">Certifications</span></h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Professional credentials and validated coursework.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cert 1 -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-400 text-xl mb-3"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="font-bold text-slate-200 mb-2">Business Analysis & Process Management</h3>
+                    </div>
+                    <span class="text-xs text-slate-400 font-semibold mt-4">Coursera[cite: 1]</span>
+                </div>
+                <!-- Cert 2 -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="text-purple-400 text-xl mb-3"><i class="fa-solid fa-cloud"></i></div>
+                        <h3 class="font-bold text-slate-200 mb-2">Introduction to Cloud Computing</h3>
+                    </div>
+                    <span class="text-xs text-slate-400 font-semibold mt-4">Simplilearn[cite: 1]</span>
+                </div>
+                <!-- Cert 3 -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="text-blue-400 text-xl mb-3"><i class="fa-solid fa-award"></i></div>
+                        <h3 class="font-bold text-slate-200 mb-2">Naan Mudhalvan</h3>
+                    </div>
+                    <span class="text-xs text-slate-400 font-semibold mt-4">Oracle[cite: 1]</span>
+                </div>
+                <!-- Cert 4 -->
+                <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="text-green-400 text-xl mb-3"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="font-bold text-slate-200 mb-2">MongoDB Basics</h3>
+                    </div>
+                    <span class="text-xs text-slate-400 font-semibold mt-4">MongoDB[cite: 1]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Get In <span class="text-blue-400">Touch</span></h2>
+            <p class="text-slate-400">Have an opportunity or question? Feel free to reach out!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                <div class="text-blue-400 text-2xl mb-3"><i class="fa-solid fa-envelope"></i></div>
+                <h3 class="font-bold text-sm text-slate-400 mb-1">Email</h3>
+                <a href="mailto:athishkumar067@gmail.com" class="text-slate-200 hover:text-blue-400 text-sm font-medium transition">athishkumar067@gmail.com[cite: 1]</a>
+            </div>
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                <div class="text-purple-400 text-2xl mb-3"><i class="fa-solid fa-phone"></i></div>
+                <h3 class="font-bold text-sm text-slate-400 mb-1">Phone</h3>
+                <a href="tel:8973020609" class="text-slate-200 hover:text-purple-400 text-sm font-medium transition">+91 8973020609[cite: 1]</a>
+            </div>
+            <div class="bg-cardBg p-6 rounded-2xl border border-slate-800 text-center">
+                <div class="text-green-400 text-2xl mb-3"><i class="fa-solid fa-location-dot"></i></div>
+                <h3 class="font-bold text-sm text-slate-400 mb-1">Location</h3>
+                <span class="text-slate-200 text-sm font-medium">Coimbatore, India[cite: 1]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Athishkumar S. Designed with Modern Style & Tailwind CSS.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on click link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
